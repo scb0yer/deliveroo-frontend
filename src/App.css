@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Normal";
+  src: local("Normal"),
+    url("./assets/deliveroo-fonts_dfnsdf/IBMPlexSans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bold";
+  src: local("Bold"),
+    url("./assets/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.ttf")
+      format("truetype");
+}
+header {
+  padding: 10px;
+  border-bottom: 1px solid rgb(203, 201, 201);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+header > img {
+  height: 40px;
+}
+main {
+  font-family: "Normal";
+}
+main > div {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+h1 {
+  font-family: "Bold";
+  font-size: 32px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+h2 {
+  font-family: "Bold";
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+h3 {
+  font-family: "Normal";
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.description {
+  font-size: 19px;
+  line-height: 30px;
+  color: gray;
+}
+.titleImg {
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.titleContainer {
+  padding-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.mainContainer {
+  background-color: #f3f5f5;
+}
+.mealsContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.mealsContainer > div {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 40%;
+  display: flex;
+  gap: 20px;
+}
+.mealsContainer > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.mealDescription {
+  color: grey;
+  height: 50px;
+  overflow-y: hidden;
+  margin-bottom: 10px;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.mainContainer > div:first-child {
+  flex: 1;
+}
+.mainContainer > div:nth-child(2) {
+  margin-top: 20px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+.mealsContainer > div > div > div {
+  display: flex;
+  gap: 20px;
+}
+.mealPicture {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.popular {
+  height: 20px;
+  object-fit: contain;
+}
