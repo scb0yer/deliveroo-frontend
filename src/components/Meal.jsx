@@ -5,7 +5,6 @@ const Meal = (props) => {
     const newBasket = [...props.basket];
     let alreadyInBasket = false;
     let indexMeal = 0;
-    console.log(meal.title);
     for (let i = 0; i < props.basket.length; i++) {
       if (props.basket[i][0] === meal.title) {
         if (props.basket[i][1] > 0) {
@@ -16,10 +15,11 @@ const Meal = (props) => {
       }
     }
     if (!alreadyInBasket) {
-      newBasket.push([meal.title, 1]);
+      newBasket.push([meal.title, 1, meal.price]);
       props.setBasket(newBasket);
     } else if (alreadyInBasket) {
       newBasket[indexMeal][1]++;
+      console.log(newBasket[indexMeal][1]);
       props.setBasket(newBasket);
     }
   };
